@@ -30,16 +30,7 @@ const GalleryPage = async () => {
   return (
     <>
       <MasonryGallery dir="student-process" images={images} />
-      {/* <Gallery images={imageFilenames} /> */}
     </>
-  );
-};
-
-const Title = ({ Name, Title }: { Name: string; Title: String }) => {
-  return (
-    <h1 className="text-5xl">
-      {Name} {Title}
-    </h1>
   );
 };
 

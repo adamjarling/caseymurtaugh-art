@@ -2,12 +2,11 @@
 
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
-import Lightbox from "react-image-lightbox";
+import Lightbox from "yet-another-react-lightbox";
 import Image from "next/image";
-import "react-image-lightbox/style.css";
 import { type MasonryImage } from "./page";
 import styles from "../page.module.css";
-import "react-image-lightbox/style.css";
+import "yet-another-react-lightbox/styles.css";
 
 interface Props {
   dir: string;
@@ -15,13 +14,15 @@ interface Props {
 }
 
 const MasonryGallery: React.FC<Props> = ({ dir, images }) => {
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [photoIndex, setPhotoIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleImageClick = (index: number) => {
     setPhotoIndex(index);
     setIsOpen(true);
   };
+
+  console.log("photoIndex", photoIndex);
 
   const breakpointColumnsObj = {
     default: 3,
@@ -38,12 +39,6 @@ const MasonryGallery: React.FC<Props> = ({ dir, images }) => {
       >
         {images.map((image, index) => (
           <div key={image.filename}>
-            {/* <img
-              src={image}
-              alt={`Image ${index}`}
-              onClick={() => handleImageClick(index)}
-              style={{ width: "100%", cursor: "pointer" }}
-            /> */}
             <Image
               onClick={() => handleImageClick(index)}
               width={image.width}
@@ -56,24 +51,22 @@ const MasonryGallery: React.FC<Props> = ({ dir, images }) => {
           </div>
         ))}
       </Masonry>
-      {isOpen && (
-        <Lightbox
-          mainSrc={`/${dir}/${images[photoIndex].filename}`}
-          nextSrc={`/${dir}/${
-            images[(photoIndex + 1) % images.length].filename
-          }`}
-          prevSrc={`/${dir}/${
-            images[(photoIndex + images.length - 1) % images.length].filename
-          }`}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
-        />
-      )}
+      <Lightbox
+        open={photoIndex >= 0}
+        index={photoIndex}
+        close={() => setPhotoIndex(-1)}
+        slides={images.map((i) => ({
+          src: `/${dir}/${i.filename}`,
+          key: i.filename,
+          width: i.width,
+          height: i.height,
+          //   srcSet: images?.map((image) => ({
+          //     src: `/${dir}/${i.filename}`,
+          //     width: image.width,
+          //     height: image.height,
+          //   })),
+        }))}
+      />
     </>
   );
 };
