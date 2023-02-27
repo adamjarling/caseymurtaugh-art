@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
 
-import Nav from "@/app/Nav";
+import Nav from "@/components/Nav";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -70,16 +70,17 @@ export default function RootLayout({
         <Nav links={links} />
         <>
           {children}
-          <Script id="onRouteChange">{`
-        (function (history) {
-          var pushState = history.pushState;
-          history.pushState = function(state){
-            var result = pushState.apply(history, arguments);
-            window.dispatchEvent(new Event("routeChange", state));
-            return result;
-          };
-        })(window.history);
-      `}</Script>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GA}');
+            `}
+          </Script>
         </>
       </body>
     </html>

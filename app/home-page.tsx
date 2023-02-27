@@ -6,7 +6,11 @@ export default function Home() {
   return (
     <>
       <main>
-        <HeroImage imageUrl="/student-artwork/IMG_0229(1).jpg" altText="Hero" />
+        <HeroImage
+          headline="Headline goes here"
+          imageUrl="/student-artwork/IMG_0229(1).jpg"
+          altText="Hero"
+        />
 
         <section className="section">
           <h2 className="text-xl bold">Educator</h2>

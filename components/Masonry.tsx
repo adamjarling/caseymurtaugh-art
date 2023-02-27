@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Lightbox from "yet-another-react-lightbox";
 
-import styles from "./page.module.css";
+import styles from "@/app/page.module.css";
 
 export type MasonryImage = {
   filename: string;

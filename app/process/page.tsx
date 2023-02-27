@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-import MasonryGallery, { type MasonryImage } from "@/app/Masonry";
+import MasonryGallery, { type MasonryImage } from "@/components/Masonry";
 const sizeOf = require("image-size");
 
 const GalleryPage = async () => {
