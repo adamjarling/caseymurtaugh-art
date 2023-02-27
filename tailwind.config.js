@@ -11,12 +11,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-lato)", ...fontFamily.sans],
-        headline: ["var(--font-nova-mono)"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };

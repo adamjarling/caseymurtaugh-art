@@ -1,19 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
-import React from "react";
-import styles from "../page.module.css";
-import MasonryGallery from "../Masonry";
+
+import MasonryGallery, { MasonryImage } from "@/app/Masonry";
 const sizeOf = require("image-size");
-
-const { container, main, title } = styles;
-
-export type MasonryImage = {
-  filename: string;
-  height: number;
-  orientation: number;
-  width: number;
-  type: string;
-};
 
 const GalleryPage = async () => {
   const imageDirectory = path.join(process.cwd(), "/public/student-artwork");

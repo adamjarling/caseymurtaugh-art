@@ -1,15 +1,37 @@
 import "./globals.css";
+
+import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Nav from "./Nav";
+import Script from "next/script";
+
+import Nav from "@/app/Nav";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
 });
 
-export const metadata = {
-  title: "Home",
-  description: "Welcome to Next.js",
+export const metadata: Metadata = {
+  title: {
+    default: "Casey Murtaugh",
+    template: "%s | Casey Murtaugh",
+  },
+  description: "Artist and Educator",
+  openGraph: {
+    title: "Casey Murtaugh - Artist and Educator",
+    description: "Showcasing the ..",
+    url: "https://caseymurtaugh.art",
+    siteName: "Casey Murtaugh Art",
+    images: [
+      {
+        url: `${
+          process.env.NEXT_PUBLIC_BASE_URL
+        }/api/og?cover=${encodeURIComponent("/images/IMG_9823.jpg")}`,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 const links = [
@@ -44,17 +66,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.className}>
-      {/* <style jsx global>
-        {`
-          :root {
-            --font-lato: ${lato.style.fontFamily};
-            --font-nova-mono: ${novaMono.style.fontFamily};
-          }
-        `}
-      </style> */}
       <body>
         <Nav links={links} />
-        {children}
+        <>
+          {children}
+          <Script id="onRouteChange">{`
+        (function (history) {
+          var pushState = history.pushState;
+          history.pushState = function(state){
+            var result = pushState.apply(history, arguments);
+            window.dispatchEvent(new Event("routeChange", state));
+            return result;
+          };
+        })(window.history);
+      `}</Script>
+        </>
       </body>
     </html>
   );

@@ -1,10 +1,13 @@
 "use client";
 
+import HeroImage from "@/components/Hero";
+
 export default function Home() {
   return (
     <>
       <main>
-        <div className="w-full h-96 bg-slate-400" />
+        <HeroImage imageUrl="/student-artwork/IMG_0229(1).jpg" altText="Hero" />
+
         <section className="section">
           <h2 className="text-xl bold">Educator</h2>
         </section>

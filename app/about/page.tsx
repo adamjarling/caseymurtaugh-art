@@ -1,6 +1,6 @@
-import React from "react";
-import casey from "../../public/images/IMG_9823.jpg";
 import Image from "next/image";
+
+import casey from "@/public/images/IMG_9823.jpg";
 
 const About = () => {
   return (

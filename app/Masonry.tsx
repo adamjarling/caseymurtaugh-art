@@ -1,12 +1,21 @@
 "use client";
 
+import "yet-another-react-lightbox/styles.css";
+
+import Image from "next/image";
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Lightbox from "yet-another-react-lightbox";
-import Image from "next/image";
-import { type MasonryImage } from "./process/page";
+
 import styles from "./page.module.css";
-import "yet-another-react-lightbox/styles.css";
+
+export type MasonryImage = {
+  filename: string;
+  height: number;
+  orientation: number;
+  width: number;
+  type: string;
+};
 
 interface Props {
   dir: string;

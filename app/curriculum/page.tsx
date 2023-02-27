@@ -1,3 +1,23 @@
+import { Metadata } from "next";
+
+const description = "Public education art curriculum...";
+
+export const metadata: Metadata = {
+  title: "Curriculum",
+  description,
+  openGraph: {
+    title: "Curriculum - Casey Murtaugh Educator",
+    description,
+    images: [
+      {
+        url: `${
+          process.env.NEXT_PUBLIC_BASE_URL
+        }/api/og?cover=${encodeURIComponent("/student-process/IMG_7908.jpg")}`,
+      },
+    ],
+  },
+};
+
 export default function CurriculumPage() {
   return (
     <>
