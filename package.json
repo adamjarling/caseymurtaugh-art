@@ -14,10 +14,12 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
+    "framer-motion": "^10.0.0",
     "image-size": "^1.0.2",
     "next": "13.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "react-masonry-css": "^1.0.16",
     "typescript": "4.9.5",
     "yet-another-react-lightbox": "^2.4.3"

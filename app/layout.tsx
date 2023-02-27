@@ -1,22 +1,39 @@
 import "./globals.css";
-import type { AppProps } from "next/app";
-import { Nova_Mono, Lato } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import Nav from "./Nav";
 
-const novaMono = Nova_Mono({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-nova-mono",
-  weight: "400",
-});
-const lato = Lato({
-  subsets: ["latin"],
-  variable: "--font-lato",
-  weight: "300",
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
   title: "Home",
   description: "Welcome to Next.js",
 };
+
+const links = [
+  {
+    href: "/about",
+    label: "About",
+  },
+  {
+    href: "/process",
+    label: "Process",
+  },
+  {
+    href: "/student-artwork",
+    label: "Student Artwork",
+  },
+  {
+    href: "/curriculum",
+    label: "Curriculum",
+  },
+  {
+    href: "/cv",
+    label: "CV",
+  },
+];
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -26,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.className}>
       {/* <style jsx global>
         {`
           :root {
@@ -35,7 +52,10 @@ export default function RootLayout({
           }
         `}
       </style> */}
-      <body>{children}</body>
+      <body>
+        <Nav links={links} />
+        {children}
+      </body>
     </html>
   );
 }

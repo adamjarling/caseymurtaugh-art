@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Lightbox from "yet-another-react-lightbox";
 import Image from "next/image";
-import { type MasonryImage } from "./page";
-import styles from "../page.module.css";
+import { type MasonryImage } from "./process/page";
+import styles from "./page.module.css";
 import "yet-another-react-lightbox/styles.css";
 
 interface Props {
@@ -15,14 +15,10 @@ interface Props {
 
 const MasonryGallery: React.FC<Props> = ({ dir, images }) => {
   const [photoIndex, setPhotoIndex] = useState(-1);
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleImageClick = (index: number) => {
     setPhotoIndex(index);
-    setIsOpen(true);
   };
-
-  console.log("photoIndex", photoIndex);
 
   const breakpointColumnsObj = {
     default: 3,

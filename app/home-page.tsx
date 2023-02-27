@@ -4,16 +4,30 @@ export default function Home() {
   return (
     <>
       <main>
-        <h1 className="text-5xl">Casey Murtaugh . art</h1>
-        <p className="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="w-full h-96 bg-slate-400" />
+        <section className="section">
+          <h2 className="text-xl bold">Educator</h2>
+        </section>
+
+        <div className="w-full h-36 bg-slate-400" />
+
+        <section className="section">
+          <h2 className="text-xl bold">Artist</h2>
+        </section>
+
+        <div className="w-full h-36 bg-slate-400" />
+
+        <section className="section">
+          <h2 className="text-xl bold">Observer</h2>
+        </section>
+
+        <div className="w-full h-36 bg-slate-400" />
+
+        <section className="section">
+          <h2 className="text-xl bold">Yogi</h2>
+        </section>
+
+        <div className="w-full h-36 bg-slate-400" />
       </main>
     </>
   );

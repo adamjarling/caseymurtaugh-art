@@ -14,4 +14,8 @@ html {
   h5 {
     @apply font-headline;
   }
+
+  .section {
+    @apply max-w-3xl py-8 mx-auto;
+  }
 }
