@@ -6,7 +6,17 @@ const About = () => {
   return (
     <>
       <Image src={casey} alt="Casey artwork" />
-      <section className="text-center section">Some text goes here</section>
+      <section className="section">
+        <h2>Educator</h2>
+      </section>
+
+      <section className="section">
+        <h2>Artist</h2>
+      </section>
+
+      <section className="section">
+        <h2>Observer</h2>
+      </section>
     </>
   );
 };
