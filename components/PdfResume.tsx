@@ -11,9 +11,13 @@ import { Document, Page } from "react-pdf";
 
 export default function PDFViewer() {
   const [file, setFile] = useState("/images/CaseyMurtaugh_Resume2023.pdf");
-  const [numPages, setNumPages] = useState(null);
+  const [numPages, setNumPages] = useState<number | null>(null);
 
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
+  function onDocumentLoadSuccess({
+    numPages: nextNumPages,
+  }: {
+    numPages: number;
+  }) {
     console.log("nextNumPages", nextNumPages);
     setNumPages(nextNumPages);
   }
@@ -26,8 +30,10 @@ export default function PDFViewer() {
       <Document
         file={"/images/CaseyMurtaugh_Resume2023.pdf"}
         onLoadSuccess={onDocumentLoadSuccess}
+        // @ts-ignore
         pageLayout="twoColumnLeft"
       >
+        {/* @ts-ignore */}
         {Array.from({ length: numPages }, (_, index) => (
           <Page
             key={`page_${index + 1}`}
