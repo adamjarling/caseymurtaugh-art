@@ -6,6 +6,23 @@ import Block from "@/components/Block";
 import HeroImage from "@/components/Hero";
 import ParallaxHero from "@/components/ParallaxHero";
 
+function SectionHeader({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="container py-5">
+      <motion.h2
+        initial={{ x: -100 }}
+        whileInView={{ x: 0 }}
+        transition={{
+          type: "spring",
+        }}
+        className="homepage-subtitle"
+      >
+        {children}
+      </motion.h2>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -16,11 +33,7 @@ export default function Home() {
           altText="Hero"
         />
 
-        <section className="section">
-          <motion.h2 animate={{ opacity: 0 }} className="homepage-subtitle">
-            Educator
-          </motion.h2>
-        </section>
+        <SectionHeader>Educator</SectionHeader>
 
         <div className="grid gap-2 grid-cols1 md:grid-cols-3">
           <Block
@@ -43,9 +56,7 @@ export default function Home() {
           />
         </div>
 
-        <section className="section">
-          <h2 className="homepage-subtitle">Artist</h2>
-        </section>
+        <SectionHeader>Artist</SectionHeader>
         <div className="grid gap-2 grid-cols1 md:grid-cols-2">
           <Block
             bgImgSrc="/artist/IMG_8704.jpg"
@@ -61,9 +72,7 @@ export default function Home() {
           />
         </div>
 
-        <section className="section">
-          <h2 className="homepage-subtitle">Observer</h2>
-        </section>
+        <SectionHeader>Observer</SectionHeader>
         {/* <div className="grid gap-2 grid-cols1 md:grid-cols-3">
           <Block
             bgImgSrc="/travel/IMG_1584.JPG"

@@ -16,7 +16,12 @@ export default function SquareBlock({
   label,
 }: Props) {
   return (
-    <div className="relative flex items-center justify-center h-full overflow-hidden aspect-w-1 aspect-h-1">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      className="relative flex items-center justify-center h-full overflow-hidden aspect-w-1 aspect-h-1"
+    >
       <Link href={href}>
         <Image
           src={bgImgSrc}
@@ -41,6 +46,6 @@ export default function SquareBlock({
           </motion.h2>
         </div>
       </Link>
-    </div>
+    </motion.div>
   );
 }

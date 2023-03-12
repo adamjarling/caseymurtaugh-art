@@ -1,5 +1,9 @@
 import { Metadata } from "next";
 
+import PageTitleBanner from "@/components/PageTitleBanner";
+
+import { manifest } from "./manifest";
+
 const description = "Public education art curriculum...";
 
 export const metadata: Metadata = {
@@ -21,7 +25,7 @@ export const metadata: Metadata = {
 export default function CurriculumPage() {
   return (
     <>
-      <h1 className="page-title">Curriculum</h1>
+      <PageTitleBanner>Curriculum</PageTitleBanner>
       <div className="container">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,32 +36,22 @@ export default function CurriculumPage() {
       </div>
 
       <div className="container mx-auto">
-        <div className="mb-12">
-          <div className="aspect-[16/9]">
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vRtoe067qEGLro6fM_V5fSDyT2mj5ShP7JYX0K5qKK0bqNl7ZPZWg_UTRYg9FVoSKhUiTGJa2isK53m/embed?start=false&loop=false&delayms=5000"
-              width="100%"
-              height="100%"
-              allowFullScreen={true}
-            ></iframe>
-            <h2 className="mt-3 text-right">
-              Ima title <br />
-              January 2023
-            </h2>
+        {manifest.map((m, i) => (
+          <div key={i} className="mb-12">
+            <div className="aspect-[16/9]">
+              <iframe
+                src={m.src}
+                width="100%"
+                height="100%"
+                allowFullScreen={true}
+              ></iframe>
+              <div className="text-right">
+                <h2 className="mt-3 text-lg font-semibold">{m.title}</h2>
+                <p className="font-light">{m.description}</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="mb-12">
-          <div className="aspect-[16/9]">
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vRtoe067qEGLro6fM_V5fSDyT2mj5ShP7JYX0K5qKK0bqNl7ZPZWg_UTRYg9FVoSKhUiTGJa2isK53m/embed?start=false&loop=false&delayms=5000"
-              width="100%"
-              height="100%"
-              allowFullScreen={true}
-            ></iframe>
-            <h2 className="mt-3 text-right">Ima another title</h2>
-          </div>
-        </div>
+        ))}
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import MasonryGallery, { MasonryImage } from "@/components/Masonry";
+import PageTitleBanner from "@/components/PageTitleBanner";
 import { Manifest, ManifestStudentArtwork } from "@/types";
 
 import { manifest } from "./manifest";
@@ -37,7 +38,7 @@ const StudentArtworkPage = async () => {
 
   return (
     <>
-      <h1 className="page-title">Student Artwork</h1>
+      <PageTitleBanner>Student Artwork</PageTitleBanner>
       <div className="container">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
