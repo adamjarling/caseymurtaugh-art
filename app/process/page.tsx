@@ -1,10 +1,10 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { getPlaiceholder, type IGetPlaiceholderReturn } from "plaiceholder";
 
-import MasonryGallery from "@/components/Masonry";
+import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
 import { manifest } from "./manifest";
+const sizeOf = require("image-size");
 
 const folder = "student-process";
 
@@ -15,17 +15,13 @@ const StudentProcessPage = async () => {
     (f) => f !== ".DS_Store"
   );
 
-  // Generate a blur loading image and image sizing
-  const promises: any[] = [];
-  imageFilenames.forEach((ifn) =>
-    promises.push(getPlaiceholder(`/${folder}/${ifn}`))
-  );
-  const responses = await Promise.all<IGetPlaiceholderReturn>(promises);
-  const images = responses.map((response) => ({
-    ...response.img,
-    placeholder: "blur",
-    blurDataURL: response.base64,
-  }));
+  const images = imageFilenames.map((ifn): MasonryImage => {
+    const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
+    return {
+      filename: `/${folder}/${ifn}`,
+      ...dimensions,
+    };
+  });
 
   return (
     <>

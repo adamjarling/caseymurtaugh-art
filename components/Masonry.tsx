@@ -4,7 +4,6 @@ import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/styles.css";
 
 import Image from "next/image";
-import { type IGetPlaiceholderReturn } from "plaiceholder";
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Lightbox from "yet-another-react-lightbox";
@@ -12,9 +11,12 @@ import Captions from "yet-another-react-lightbox/plugins/captions";
 
 import styles from "@/app/page.module.css";
 
-export type MasonryImage = IGetPlaiceholderReturn["img"] & {
-  placeholder: any;
-  blurDataURL: string;
+export type MasonryImage = {
+  filename: string;
+  height: number;
+  width: number;
+  orientation?: number;
+  type: string;
 };
 
 interface Props {
@@ -59,9 +61,11 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
         columnClassName={styles["my-masonry-grid_column"]}
       >
         {images.map((image, index) => (
-          <div key={image.src}>
+          <div key={image.filename}>
             <Image
-              {...image}
+              src={image.filename}
+              width={image.width}
+              height={image.height}
               onClick={() => handleImageClick(index)}
               alt={"alt"}
               className="cursor-pointer"
@@ -74,12 +78,12 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
         index={photoIndex}
         close={() => setPhotoIndex(-1)}
         slides={images.map((i) => ({
-          src: i.src,
-          key: i.src,
+          src: i.filename,
+          key: i.filename,
           width: i.width,
           height: i.height,
-          title: getInfo(i.src, manifest)?.title || "",
-          description: getInfo(i.src, manifest)?.description || "",
+          title: getInfo(i.filename, manifest)?.title || "",
+          description: getInfo(i.filename, manifest)?.description || "",
         }))}
         plugins={[Captions]}
         captions={{

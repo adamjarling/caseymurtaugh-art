@@ -21,9 +21,15 @@ export const metadata: Metadata = {
 export default function CurriculumPage() {
   return (
     <>
-      <section className="text-center section">
-        Description of curriculum. This is so and so...
-      </section>
+      <h1 className="page-title">Curriculum</h1>
+      <div className="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
 
       <div className="container mx-auto">
         <div className="mb-12">
