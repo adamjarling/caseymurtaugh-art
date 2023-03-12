@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 type HeroImageProps = {
-  headline: string;
+  headline?: string;
   imageUrl: string;
   altText: string;
   subHeadline?: string;

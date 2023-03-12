@@ -15,7 +15,6 @@ export default function PDFViewer() {
   }: {
     numPages: number;
   }) {
-    console.log("nextNumPages", nextNumPages);
     setNumPages(nextNumPages);
   }
 

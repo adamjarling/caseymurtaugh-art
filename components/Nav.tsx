@@ -48,7 +48,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
           Casey Murtaugh
         </a>
       </div>
-      <div className={`hidden md:flex`}>
+      <div className={`hidden lg:flex`}>
         {links.map((link) => (
           <a
             key={link.label}
@@ -59,7 +59,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
           </a>
         ))}
       </div>
-      <div className={`md:hidden flex items-center`}>
+      <div className={`lg:hidden flex items-center`}>
         <button
           type="button"
           className={`text-gray-500 hover:text-gray-600 focus:outline-none`}
@@ -70,7 +70,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
       </div>
       {isMobileNavOpen && (
         <motion.div
-          className={`md:hidden absolute top-16 left-0 right-0 bg-white z-10`}
+          className={`lg:hidden absolute top-16 left-0 right-0 bg-white z-10`}
           initial="closed"
           animate="open"
           variants={navVariants}

@@ -20,9 +20,25 @@ export type MasonryImage = IGetPlaiceholderReturn["img"] & {
 interface Props {
   dir: string;
   images: MasonryImage[];
+  manifest?: {
+    [key: string]: {
+      title?: string;
+      description?: string;
+    };
+  };
 }
 
-const MasonryGallery: React.FC<Props> = ({ dir, images = [] }) => {
+function getInfo(src: string, manifest: any) {
+  if (!src || !manifest) return "";
+  const arr = src.split("/");
+  const fileName = src.split("/")[arr.length - 1];
+
+  const info = manifest[fileName];
+
+  return info || "";
+}
+
+const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
   const [photoIndex, setPhotoIndex] = useState(-1);
 
   const handleImageClick = (index: number) => {
@@ -32,7 +48,7 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [] }) => {
   const breakpointColumnsObj = {
     default: 3,
     1100: 2,
-    700: 1,
+    //700: 1,
   };
 
   return (
@@ -62,8 +78,8 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [] }) => {
           key: i.src,
           width: i.width,
           height: i.height,
-          title: "Some title",
-          description: "Some description",
+          title: getInfo(i.src, manifest)?.title || "",
+          description: getInfo(i.src, manifest)?.description || "",
         }))}
         plugins={[Captions]}
         captions={{

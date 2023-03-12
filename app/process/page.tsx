@@ -4,6 +4,8 @@ import { getPlaiceholder, type IGetPlaiceholderReturn } from "plaiceholder";
 
 import MasonryGallery from "@/components/Masonry";
 
+import { manifest } from "./manifest";
+
 const folder = "student-process";
 
 const StudentProcessPage = async () => {
@@ -12,7 +14,6 @@ const StudentProcessPage = async () => {
   const imageFilenames = (await fs.readdir(imageDirectory)).filter(
     (f) => f !== ".DS_Store"
   );
-  console.log(imageFilenames);
 
   // Generate a blur loading image and image sizing
   const promises: any[] = [];
@@ -28,10 +29,19 @@ const StudentProcessPage = async () => {
 
   return (
     <>
-      <section className="max-w-3xl py-8 mx-auto text-center">
-        Something goes here
-      </section>
-      {images && <MasonryGallery dir={folder} images={images} />}
+      <h1 className="page-title">Student Process</h1>
+      <div className="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      {images && (
+        <MasonryGallery dir={folder} images={images} manifest={manifest} />
+      )}
     </>
   );
 };
