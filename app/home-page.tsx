@@ -8,9 +8,9 @@ import ParallaxHero from "@/components/ParallaxHero";
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
   return (
-    <div className="container py-5">
+    <div className="container pt-8 pb-5">
       <motion.h2
-        initial={{ x: -100 }}
+        initial={{ x: -10 }}
         whileInView={{ x: 0 }}
         transition={{
           type: "spring",
@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <main>
         <ParallaxHero
-          headline="Headline goes here"
+          headline=".art"
           imageUrl="/images/IMG_1272.jpg"
           altText="Hero"
         />
@@ -37,7 +37,7 @@ export default function Home() {
 
         <div className="grid gap-2 grid-cols1 md:grid-cols-3">
           <Block
-            bgImgSrc="/student-process/IMG_6075.JPG"
+            bgImgSrc="/student-process/31.JPG"
             altText="Process"
             href="/process"
             label="Process"
