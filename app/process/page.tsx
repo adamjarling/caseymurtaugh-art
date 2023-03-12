@@ -3,14 +3,16 @@ import path from "path";
 import { getPlaiceholder, type IGetPlaiceholderReturn } from "plaiceholder";
 
 import MasonryGallery from "@/components/Masonry";
-const sizeOf = require("image-size");
 
 const folder = "student-process";
 
 const StudentProcessPage = async () => {
   // Get filenames from a directory
   const imageDirectory = path.join(process.cwd(), `/public/${folder}`);
-  const imageFilenames = await fs.readdir(imageDirectory);
+  const imageFilenames = (await fs.readdir(imageDirectory)).filter(
+    (f) => f !== ".DS_Store"
+  );
+  console.log(imageFilenames);
 
   // Generate a blur loading image and image sizing
   const promises: any[] = [];

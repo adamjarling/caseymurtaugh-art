@@ -15,10 +15,18 @@ html {
   }
 
   .homepage-subtitle {
-    @apply text-xl text-center md:text-left;
+    @apply text-2xl font-semibold text-center md:text-left;
   }
 
   .section {
-    @apply max-w-3xl py-8 mx-auto;
+    @apply max-w-4xl py-8 mx-auto;
+  }
+
+  .foobar {
+    @apply w-screen;
   }
 }
+
+/* .react-pdf__Page__canvas {
+  width: 100% !important;
+} */

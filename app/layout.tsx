@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
 
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 
 const montserrat = Montserrat({
@@ -70,6 +71,7 @@ export default function RootLayout({
         <Nav links={links} />
         <>
           {children}
+          <Footer />
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
           />

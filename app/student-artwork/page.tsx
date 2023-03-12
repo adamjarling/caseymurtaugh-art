@@ -10,7 +10,9 @@ const folder = "student-artwork";
 const StudentArtworkPage = async () => {
   // Get filenames from a directory
   const imageDirectory = path.join(process.cwd(), `/public/${folder}`);
-  const imageFilenames = await fs.readdir(imageDirectory);
+  const imageFilenames = (await fs.readdir(imageDirectory)).filter(
+    (f) => f !== ".DS_Store"
+  );
 
   // Generate a blur loading image and image sizing
   const promises: any[] = [];
