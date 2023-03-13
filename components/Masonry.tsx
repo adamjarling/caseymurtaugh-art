@@ -3,7 +3,9 @@
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/styles.css";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { type } from "os";
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Lightbox from "yet-another-react-lightbox";
@@ -61,7 +63,12 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
         columnClassName={styles["my-masonry-grid_column"]}
       >
         {images.map((image, index) => (
-          <div key={image.filename}>
+          <motion.div
+            key={image.filename}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            whileHover={{ scale: 1.05 }}
+          >
             <Image
               src={image.filename}
               width={image.width}
@@ -70,7 +77,7 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
               alt={"alt"}
               className="cursor-pointer"
             />
-          </div>
+          </motion.div>
         ))}
       </Masonry>
       <Lightbox

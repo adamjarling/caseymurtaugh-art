@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import PageTitleBanner from "@/components/PageTitleBanner";
 
+import CurriculumItem from "./item";
 import { manifest } from "./manifest";
 
 const description = "Public education art curriculum...";
@@ -37,20 +38,7 @@ export default function CurriculumPage() {
 
       <div className="container mx-auto">
         {manifest.map((m, i) => (
-          <div key={i} className="mb-12">
-            <div className="aspect-[16/9]">
-              <iframe
-                src={m.src}
-                width="100%"
-                height="100%"
-                allowFullScreen={true}
-              ></iframe>
-              <div className="text-right">
-                <h2 className="mt-3 text-lg font-semibold">{m.title}</h2>
-                <p className="font-light">{m.description}</p>
-              </div>
-            </div>
-          </div>
+          <CurriculumItem key={i} item={m} i={i} />
         ))}
       </div>
     </>

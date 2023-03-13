@@ -73,32 +73,23 @@ export default function Home() {
         </div>
 
         <SectionHeader>Observer</SectionHeader>
-        {/* <div className="grid gap-2 grid-cols1 md:grid-cols-3">
+        <div className="grid gap-2 grid-cols1 md:grid-cols-3">
           <Block
-            bgImgSrc="/travel/IMG_1584.JPG"
-            altText="Travel"
-            href="/"
-            // label="Process"
+            bgImgSrc="/observer/IMG_4729.JPG"
+            altText="Observer preview image 1"
+            href="/about"
           />
           <Block
-            bgImgSrc="/travel/IMG_3403.jpg"
-            altText="Student artwork"
-            href="/"
-            // label="Student Artwork"
+            bgImgSrc="/observer/IMG_5091.jpg"
+            altText="Observer preview image 1"
+            href="/about"
           />
           <Block
-            bgImgSrc="/travel/IMG_3403.jpg"
-            altText="Student artwork"
-            href="/"
-            // label="Student Artwork"
+            bgImgSrc="/observer/IMG_4489.JPG"
+            altText="Observer preview image 3"
+            href="/about"
           />
-        </div> */}
-
-        <HeroImage
-          //headline="Headline goes here"
-          imageUrl="/travel/IMG_3403.jpg"
-          altText="Hero"
-        />
+        </div>
       </main>
     </>
   );
