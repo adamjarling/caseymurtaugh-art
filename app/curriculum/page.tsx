@@ -29,10 +29,9 @@ export default function CurriculumPage() {
       <PageTitleBanner>Curriculum</PageTitleBanner>
       <div className="container">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          I enjoy creating art curriculum which engages students. Below are some
+          curriculum examples I have used for the Senn Arts program at my high
+          school.
         </p>
       </div>
 

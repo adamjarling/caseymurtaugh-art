@@ -28,10 +28,14 @@ const AboutPage = async () => {
       <PageTitleBanner>Me</PageTitleBanner>
       <div className="container">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Hi, I&apos;m Casey, an artist and educator living in Rogers Park,
+          Chicago. I&apos;m a graduate of the School of the Art Institute of
+          Chicago, where I studied Art Education. I have taught art in Public
+          Schools for over 10 years, and I currently teach at Senn High School.
+          I&apos;m also an artist who paints, makes sun catchers, and does
+          graphic design for worthy local garage rock bands. I enjoy walking
+          along the beach, playing with my cat, traveling outside the USA, and
+          hot yoga.
         </p>
       </div>
 

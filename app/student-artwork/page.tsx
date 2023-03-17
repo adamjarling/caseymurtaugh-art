@@ -6,6 +6,7 @@ import PageTitleBanner from "@/components/PageTitleBanner";
 import { Manifest, ManifestStudentArtwork } from "@/types";
 
 import { manifest } from "./manifest";
+
 const sizeOf = require("image-size");
 
 const folder = "student-artwork";
@@ -41,10 +42,8 @@ const StudentArtworkPage = async () => {
       <PageTitleBanner>Student Artwork</PageTitleBanner>
       <div className="container">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Here are some art pieces from the students I have taught over the
+          years.
         </p>
       </div>
       {images && (

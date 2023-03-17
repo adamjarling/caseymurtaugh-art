@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Block from "@/components/Block";
 import HeroImage from "@/components/Hero";
 import ParallaxHero from "@/components/ParallaxHero";
+import ParallaxVideo from "@/components/ParallaxVideo";
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
   return (
@@ -27,9 +28,9 @@ export default function Home() {
   return (
     <>
       <main>
-        <ParallaxHero
+        <ParallaxVideo
           headline=".art"
-          imageUrl="/images/IMG_1272.jpg"
+          videoUrl="/IMG_9825.mp4"
           altText="Hero"
         />
 

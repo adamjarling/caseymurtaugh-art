@@ -5,6 +5,7 @@ import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 import PageTitleBanner from "@/components/PageTitleBanner";
 
 import { manifest } from "./manifest";
+
 const sizeOf = require("image-size");
 
 const folder = "student-process";
@@ -29,10 +30,9 @@ const StudentProcessPage = async () => {
       <PageTitleBanner>Student Process</PageTitleBanner>
       <div className="container">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          The process of making art is a journey. It is a journey of discovery.
+          Below are some photos sharing the process of making art with my
+          students.
         </p>
       </div>
 
