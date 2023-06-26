@@ -1,8 +1,8 @@
+import MasonryGallery, { MasonryImage } from "@/components/Masonry";
+
+import PageTitleBanner from "@/components/PageTitleBanner";
 import { promises as fs } from "fs";
 import path from "path";
-
-import MasonryGallery, { MasonryImage } from "@/components/Masonry";
-import PageTitleBanner from "@/components/PageTitleBanner";
 
 const sizeOf = require("image-size");
 
@@ -25,17 +25,21 @@ const AboutPage = async () => {
 
   return (
     <>
-      <PageTitleBanner>Me</PageTitleBanner>
+      {/* <PageTitleBanner>Me</PageTitleBanner> */}
       <div className="container">
-        <p>
-          Hi, I&apos;m Casey, an artist and educator living in Rogers Park,
-          Chicago. I&apos;m a graduate of the School of the Art Institute of
-          Chicago, where I studied Art Education. I have taught art in Public
-          Schools for over 10 years, and I currently teach at Senn High School.
-          I&apos;m also an artist who paints, makes sun catchers, and does
-          graphic design for worthy local garage rock bands. I enjoy walking
-          along the beach, playing with my cat, traveling outside the USA, and
-          hot yoga.
+        <p className="py-8 text-justify">
+          My name is Casey Murtaugh, an artist and educator living and working
+          in Chicago, USA. My artmaking and teaching practices are both exciting
+          and challenging for me. I work very intently to understand these
+          challenges as seeds for personal growth, and am in a constant state of
+          learning. I take photographs of people and street art in cities I
+          visit around the world. I make paintings and collages inspired by what
+          I see in them. I have a regular hot yoga practice which helps keep me
+          mentally and physically fit. I share an apartment with my musician
+          husband, Adam, and loving cat, Topanga, on a street which overlooks
+          Lake Michigan. We can hear the waves when our windows are open. I
+          &apos;ve been teaching visual art in public schools for the past 10
+          years.
         </p>
       </div>
 

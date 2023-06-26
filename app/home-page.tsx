@@ -1,11 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 import Block from "@/components/Block";
 import HeroImage from "@/components/Hero";
 import ParallaxHero from "@/components/ParallaxHero";
 import ParallaxVideo from "@/components/ParallaxVideo";
+import { motion } from "framer-motion";
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
   return (
@@ -28,11 +27,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <ParallaxVideo
-          headline=".art"
-          videoUrl="/IMG_9825.mp4"
-          altText="Hero"
-        />
+        <ParallaxVideo headline="" videoUrl="/IMG_9825.mp4" altText="Hero" />
 
         <SectionHeader>Educator</SectionHeader>
 

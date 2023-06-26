@@ -1,11 +1,10 @@
-import { promises as fs } from "fs";
-import path from "path";
-
-import MasonryGallery, { MasonryImage } from "@/components/Masonry";
-import PageTitleBanner from "@/components/PageTitleBanner";
 import { Manifest, ManifestStudentArtwork } from "@/types";
+import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
+import PageTitleBanner from "@/components/PageTitleBanner";
+import { promises as fs } from "fs";
 import { manifest } from "./manifest";
+import path from "path";
 
 const sizeOf = require("image-size");
 
@@ -39,12 +38,9 @@ const StudentArtworkPage = async () => {
 
   return (
     <>
-      <PageTitleBanner>Student Artwork</PageTitleBanner>
-      <div className="container">
-        <p>
-          Here are some art pieces from the students I have taught over the
-          years.
-        </p>
+      {/* <PageTitleBanner>Student Artwork</PageTitleBanner> */}
+      <div className="container py-8">
+        <p>Click on an image for more information about each piece.</p>
       </div>
       {images && (
         <MasonryGallery dir={folder} images={images} manifest={newManifest} />

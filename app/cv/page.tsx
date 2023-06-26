@@ -1,8 +1,7 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
 import PageTitleBanner from "@/components/PageTitleBanner";
+import dynamic from "next/dynamic";
 
 const PDFViewer = dynamic(() => import("@/components/PdfResume"), {
   ssr: false,
@@ -11,7 +10,7 @@ const PDFViewer = dynamic(() => import("@/components/PdfResume"), {
 export default function CVPage() {
   return (
     <>
-      <PageTitleBanner>CV</PageTitleBanner>
+      {/* <PageTitleBanner>CV</PageTitleBanner> */}
       <PDFViewer />
     </>
   );
