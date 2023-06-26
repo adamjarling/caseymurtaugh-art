@@ -54,12 +54,14 @@ const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
     //700: 1,
   };
 
-  const galleryImages = images.filter((i) =>
-    Object.hasOwn(
-      manifest as any,
-      i.filename.slice(i.filename.lastIndexOf("/") + 1)
-    )
-  );
+  const galleryImages = !manifest
+    ? images
+    : images.filter((i) =>
+        Object.hasOwn(
+          manifest as any,
+          i.filename.slice(i.filename.lastIndexOf("/") + 1)
+        )
+      );
 
   return (
     <>

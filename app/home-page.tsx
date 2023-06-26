@@ -5,24 +5,8 @@ import Grid from "@/components/Grid";
 import HeroImage from "@/components/Hero";
 import ParallaxHero from "@/components/ParallaxHero";
 import ParallaxVideo from "@/components/ParallaxVideo";
+import SectionHeader from "@/components/SectionHeader";
 import { motion } from "framer-motion";
-
-function SectionHeader({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="container pt-8 pb-5">
-      <motion.h2
-        initial={{ x: -10 }}
-        whileInView={{ x: 0 }}
-        transition={{
-          type: "spring",
-        }}
-        className="homepage-subtitle"
-      >
-        {children}
-      </motion.h2>
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -30,28 +14,29 @@ export default function Home() {
       <main>
         <ParallaxVideo headline="" videoUrl="/IMG_9825.mp4" altText="Hero" />
 
-        <SectionHeader>Educator</SectionHeader>
-
-        <Grid>
-          <Block
-            bgImgSrc="/student-process/31.JPG"
-            altText="Process"
-            href="/process"
-            label="Process"
-          />
-          <Block
-            bgImgSrc="/student-artwork/IMG_0224.jpg"
-            altText="Student artwork"
-            href="/student-artwork"
-            label="Student Artwork"
-          />
-          <Block
-            bgImgSrc="/educator/IMG_6272.jpg"
-            altText="Student with magnifying glass"
-            href="/curriculum"
-            label="Curriculum"
-          />
-        </Grid>
+        <section className="py-8">
+          <SectionHeader>Educator</SectionHeader>
+          <Grid>
+            <Block
+              bgImgSrc="/student-process/31.JPG"
+              altText="Process"
+              href="/process"
+              label="Process"
+            />
+            <Block
+              bgImgSrc="/student-artwork/IMG_0224.jpg"
+              altText="Student artwork"
+              href="/student-artwork"
+              label="Student Artwork"
+            />
+            <Block
+              bgImgSrc="/educator/IMG_6272.jpg"
+              altText="Student with magnifying glass"
+              href="/curriculum"
+              label="Curriculum"
+            />
+          </Grid>
+        </section>
 
         <SectionHeader>Artist</SectionHeader>
         <Grid cols={2}>

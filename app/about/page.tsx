@@ -1,6 +1,7 @@
 import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
 import PageTitleBanner from "@/components/PageTitleBanner";
+import SectionHeader from "@/components/SectionHeader";
 import { promises as fs } from "fs";
 import path from "path";
 
@@ -43,7 +44,14 @@ const AboutPage = async () => {
         </p>
       </div>
 
-      {images && <MasonryGallery dir={folder} images={images} />}
+      <section className="pb-8">
+        <SectionHeader>Photos</SectionHeader>
+        {images && <MasonryGallery dir={folder} images={images} />}
+      </section>
+
+      <section className="pb-8">
+        <SectionHeader>Artwork</SectionHeader>
+      </section>
     </>
   );
 };

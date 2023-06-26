@@ -51,7 +51,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: opacity }}
           transition={{
-            duration: 0.5,
+            duration: 0.2,
           }}
         ></motion.div>
         <nav
