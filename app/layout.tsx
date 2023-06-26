@@ -1,11 +1,10 @@
 import "./globals.css";
 
+import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Script from "next/script";
-
-import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -69,21 +68,21 @@ export default function RootLayout({
     <html lang="en" className={montserrat.className}>
       <body>
         <Nav links={links} />
-        <>
+        <div className="pt-16 lg:pt-16">
           {children}
           <Footer />
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
+        </div>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA}`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${process.env.NEXT_PUBLIC_GA}');
             `}
-          </Script>
-        </>
+        </Script>
       </body>
     </html>
   );

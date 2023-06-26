@@ -1,9 +1,10 @@
 "use client";
 
 import { FiMenu, FiX } from "react-icons/fi";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { motion, useScroll } from "framer-motion";
 
-import { motion } from "framer-motion";
+import { IoIosMenu } from "react-icons/io";
 
 interface NavProps {
   links: {
@@ -14,80 +15,98 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({ links }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
+  const [opacity, setOpacity] = useState(0);
+  useEffect(() => {
+    scrollYProgress.on("change", (v) => {
+      setOpacity(Math.ceil(v));
+    });
+  }, [scrollYProgress]);
 
   const navVariants = {
     open: {
-      y: 0,
+      x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        stiffness: 500,
-        damping: 30,
+        duration: 0.2,
       },
     },
     closed: {
-      y: -50,
+      x: "100%",
       opacity: 0,
-      transition: {
-        type: "spring",
-        stiffness: 500,
-        damping: 30,
-      },
     },
   };
 
   return (
-    <div className="container">
-      <nav className={`flex justify-between items-center py-4 bg-white`}>
-        <div className={`flex items-center`}>
-          <a href="/" className={`text-lg font-semibold text-gray-800`}>
-            Casey Murtaugh
-          </a>
-        </div>
-        <div className={`hidden lg:flex`}>
-          {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={`mx-4 text-gray-600 hover:text-gray-800`}
-            >
-              {link.label}
+    <div className="fixed top-0 z-20 w-full">
+      <div className="container">
+        <motion.div
+          className={`absolute inset-0 bg-white ${
+            opacity > 0 ? "shadow-lg" : ""
+          }`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: opacity }}
+          transition={{
+            duration: 0.5,
+          }}
+        ></motion.div>
+        <nav
+          className={`flex justify-between items-center py-3 md:py-5 shadow-sm w-full`}
+        >
+          <div className={`flex items-center opacity-100 z-30`}>
+            <a href="/" className={`text-lg font-semibold uppercase`}>
+              <span className="hidden lg:block">Casey Murtaugh</span>
+              <span className="lg:hidden">CM</span>
             </a>
-          ))}
-        </div>
-        <div className={`lg:hidden flex items-center`}>
-          <button
-            type="button"
-            className={`text-gray-500 hover:text-gray-600 focus:outline-none`}
-            onClick={toggleMobileNav}
-          >
-            {isMobileNavOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-          </button>
-        </div>
-        {isMobileNavOpen && (
-          <motion.div
-            className={`lg:hidden absolute top-16 left-0 right-0 bg-white z-10`}
-            initial="closed"
-            animate="open"
-            variants={navVariants}
-          >
+          </div>
+          <div className={`hidden md:flex uppercase opacity-100 z-30`}>
             {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className={`block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100`}
-                onClick={toggleMobileNav}
-              >
+              <a key={link.label} href={link.href} className={`mx-4 text-sm`}>
                 {link.label}
               </a>
             ))}
-          </motion.div>
-        )}
-      </nav>
+          </div>
+          {/* Mobile menu button */}
+          <div className={`md:hidden flex items-center z-20`}>
+            <button
+              type="button"
+              className={` focus:outline-none`}
+              onClick={toggleMobileNav}
+            >
+              {isMobileNavOpen ? (
+                <FiX size={40} color="white" />
+              ) : (
+                <IoIosMenu size={40} />
+              )}
+            </button>
+          </div>
+          {isMobileNavOpen && (
+            <motion.div
+              className={`md:hidden fixed inset-0 bg-white z-10 h-screen`}
+              initial="closed"
+              animate="open"
+              variants={navVariants}
+            >
+              <div className="mt-20">
+                {links.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className={`block text-3xl py-2 px-4`}
+                    onClick={toggleMobileNav}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </nav>
+      </div>
     </div>
   );
 };
