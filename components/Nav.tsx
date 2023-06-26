@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import React, { useState } from "react";
+
+import { motion } from "framer-motion";
 
 interface NavProps {
   links: {
@@ -40,54 +41,54 @@ const Nav: React.FC<NavProps> = ({ links }) => {
   };
 
   return (
-    <nav
-      className={`flex justify-between items-center py-4 px-6 bg-white shadow-sm`}
-    >
-      <div className={`flex items-center`}>
-        <a href="/" className={`text-lg font-semibold text-gray-800`}>
-          Casey Murtaugh
-        </a>
-      </div>
-      <div className={`hidden lg:flex`}>
-        {links.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            className={`mx-4 text-gray-600 hover:text-gray-800`}
-          >
-            {link.label}
+    <div className="container">
+      <nav className={`flex justify-between items-center py-4 bg-white`}>
+        <div className={`flex items-center`}>
+          <a href="/" className={`text-lg font-semibold text-gray-800`}>
+            Casey Murtaugh
           </a>
-        ))}
-      </div>
-      <div className={`lg:hidden flex items-center`}>
-        <button
-          type="button"
-          className={`text-gray-500 hover:text-gray-600 focus:outline-none`}
-          onClick={toggleMobileNav}
-        >
-          {isMobileNavOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-        </button>
-      </div>
-      {isMobileNavOpen && (
-        <motion.div
-          className={`lg:hidden absolute top-16 left-0 right-0 bg-white z-10`}
-          initial="closed"
-          animate="open"
-          variants={navVariants}
-        >
+        </div>
+        <div className={`hidden lg:flex`}>
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className={`block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100`}
-              onClick={toggleMobileNav}
+              className={`mx-4 text-gray-600 hover:text-gray-800`}
             >
               {link.label}
             </a>
           ))}
-        </motion.div>
-      )}
-    </nav>
+        </div>
+        <div className={`lg:hidden flex items-center`}>
+          <button
+            type="button"
+            className={`text-gray-500 hover:text-gray-600 focus:outline-none`}
+            onClick={toggleMobileNav}
+          >
+            {isMobileNavOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
+        </div>
+        {isMobileNavOpen && (
+          <motion.div
+            className={`lg:hidden absolute top-16 left-0 right-0 bg-white z-10`}
+            initial="closed"
+            animate="open"
+            variants={navVariants}
+          >
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100`}
+                onClick={toggleMobileNav}
+              >
+                {link.label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </nav>
+    </div>
   );
 };
 

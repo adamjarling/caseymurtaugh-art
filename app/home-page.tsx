@@ -1,6 +1,7 @@
 "use client";
 
 import Block from "@/components/Block";
+import Grid from "@/components/Grid";
 import HeroImage from "@/components/Hero";
 import ParallaxHero from "@/components/ParallaxHero";
 import ParallaxVideo from "@/components/ParallaxVideo";
@@ -31,7 +32,7 @@ export default function Home() {
 
         <SectionHeader>Educator</SectionHeader>
 
-        <div className="grid gap-2 grid-cols1 md:grid-cols-3">
+        <Grid>
           <Block
             bgImgSrc="/student-process/31.JPG"
             altText="Process"
@@ -50,10 +51,10 @@ export default function Home() {
             href="/curriculum"
             label="Curriculum"
           />
-        </div>
+        </Grid>
 
         <SectionHeader>Artist</SectionHeader>
-        <div className="grid gap-2 grid-cols1 md:grid-cols-2">
+        <Grid cols={2}>
           <Block
             bgImgSrc="/artist/IMG_8704.jpg"
             altText="Process"
@@ -66,9 +67,9 @@ export default function Home() {
             href="/"
             label="Photos"
           />
-        </div>
+        </Grid>
 
-        <SectionHeader>Observer</SectionHeader>
+        {/* <SectionHeader>Observer</SectionHeader>
         <div className="grid gap-2 grid-cols1 md:grid-cols-3">
           <Block
             bgImgSrc="/observer/IMG_4729.JPG"
@@ -85,7 +86,7 @@ export default function Home() {
             altText="Observer preview image 3"
             href="/about"
           />
-        </div>
+        </div> */}
       </main>
     </>
   );
