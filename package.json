@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "image-meta": "node utils/extract-image-metadata.ts"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

@@ -1,29 +1,15 @@
 import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
 import PageTitleBanner from "@/components/PageTitleBanner";
-import { promises as fs } from "fs";
+import images from "./images-meta.json";
 import { manifest } from "./manifest";
-import path from "path";
-
-const sizeOf = require("image-size");
 
 const folder = "student-process";
 
+// How do I import a JSON file in TypeScript?
+// https://stackoverflow.com/questions/49996456/how-do-i-import-a-json-file-in-typescript
+
 const StudentProcessPage = async () => {
-  // Get filenames from a directory
-  const imageDirectory = path.join(process.cwd(), `/public/${folder}`);
-  const imageFilenames = (await fs.readdir(imageDirectory)).filter(
-    (f) => f !== ".DS_Store"
-  );
-
-  const images = imageFilenames.map((ifn): MasonryImage => {
-    const dimensions = sizeOf(`${imageDirectory}/${ifn}`);
-    return {
-      filename: `/${folder}/${ifn}`,
-      ...dimensions,
-    };
-  });
-
   return (
     <>
       {/* <PageTitleBanner>Student Process</PageTitleBanner> */}
