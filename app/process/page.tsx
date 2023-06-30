@@ -36,9 +36,7 @@ const StudentProcessPage = async () => {
         </p>
       </div>
 
-      {images && (
-        <MasonryGallery dir={folder} images={images} manifest={manifest} />
-      )}
+      {images && <MasonryGallery images={images} manifest={manifest} />}
     </>
   );
 };
