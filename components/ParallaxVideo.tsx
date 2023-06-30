@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+
 import Image from "next/image";
 
 type ParallaxVideoProps = {
@@ -20,17 +21,10 @@ const ParallaxVideo: React.FC<ParallaxVideoProps> = ({
   const y = useTransform(scrollYProgress, [0, 1], ["0", "50%"]);
 
   return (
-    <div className="relative w-full h-[75vh] overflow-hidden">
-      {/* <MotionImage
-        style={{ y }}
-        src={imageUrl}
-        alt={altText}
-        fill
-        className="z-0 object-cover"
-      /> */}
+    <div className="relative w-full h-[45vh] md:h-[75vh] overflow-hidden">
       <motion.video
         style={{ y }}
-        className="absolute top-0 bottom-0 left-0 right-0 object-cover min-w-full min-h-full"
+        className="absolute top-0 bottom-0 object-cover min-h-full left-100"
         autoPlay
         loop
         muted

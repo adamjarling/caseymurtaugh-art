@@ -1,4 +1,46 @@
 export const manifest = {
+  "IMG_0219.jpg": {
+    artist: "Valeria Perez-Rebollar",
+    grade: 10,
+    materials: "Colored pencil, pen, pencil, acrylic",
+    description: "Class: MultiMedia I",
+    year: 2022,
+  },
+  "IMG_0220.jpg": {
+    artist: "Iris Anderson",
+    grade: 11,
+    materials: "Acrylic",
+    description: "Class: AP-2D Art & Design",
+    year: 2023,
+  },
+  "IMG_0221.jpg": {
+    artist: "Talia Lewis",
+    grade: 10,
+    materials: "Acrylic, collage, chalk pastel",
+    description: "Class: MultiMedia I",
+    year: 2022,
+  },
+  "IMG_0222.jpg": {
+    artist: "Valeria Perez-Rebollar",
+    grade: 10,
+    materials: "Acrylic, string, buttons",
+    description: "Class: Multimedia I",
+    year: 2022,
+  },
+  "IMG_0223.jpg": {
+    artist: "Mila Cardenas",
+    grade: 11,
+    materials: "Pen, pencil, collage",
+    description: "Class: AP-2D Art & Design",
+    year: 2023,
+  },
+  "IMG_0224.jpg": {
+    artist: "Cole Ryan",
+    grade: 10,
+    materials: "Pen, sharpie, acrylic, collage",
+    description: "Class: Multimedia I",
+    year: 2022,
+  },
   "IMG_0225.jpg": {
     artist: "Leila Cruz",
     grade: 11,
@@ -9,7 +51,7 @@ export const manifest = {
   "IMG_0226.jpg": {
     artist: "Cole Ryan",
     grade: 10,
-    materials: "Watercolor, tracing & construction paper, pen",
+    materials: "Watercolor, tracing paper, construction paper, pen",
     description: "Class: Multimedia I",
     year: 2022,
   },
@@ -32,21 +74,7 @@ export const manifest = {
     grade: 11,
     materials: "Colored pencil",
     description: "Class: AP-2D Art & Design",
-    year: 2023,
-  },
-  "IMG_0229(1).jpg": {
-    artist: "Lesly Sanchez",
-    grade: 11,
-    materials: "Pencil, acrylic, pen",
-    description: "Class: AP-2D Art & Design",
     year: 2022,
-  },
-  "IMG_0230.jpg": {
-    artist: "Ta'Kirah King",
-    grade: 10,
-    materials: "Acrylic, block-printing, yarn",
-    description: "Class: Multimedia I",
-    year: 2023,
   },
   "IMG_5480.jpg": {
     artist: "Nelly Villegas",
@@ -55,30 +83,31 @@ export const manifest = {
     description: "Class: AP-2D Art & Design",
     year: 2023,
   },
-  "IMG_6358.jpg": {
+
+  "IMG_6358.JPG": {
     artist: "Natalie Ortega",
     grade: 9,
-    materials: "Digital self-portrait",
+    materials: "Digital photo, self-portrait",
     description: "Class: Art I",
     year: 2019,
   },
-  "IMG_6359.jpg": {
+  "IMG_6359.JPG": {
     artist: "Habtamu Regasa",
     grade: 12,
-    materials: "Digital self-portrait",
+    materials: "Digital photo, self-portrait",
     description: "Class: Art I",
     year: 2019,
   },
   "IMG_6391.jpg": {
     artist: "Melvin Hughes",
     grade: 9,
-    materials: "Digital self-portrait",
+    materials: "Digital photo, self-portrait",
     description: "Class: Art I",
     year: 2019,
   },
-  "IMG_7395.jpg": {
+  "IMG_7395.JPG": {
     artist: "Max Evans",
-    grade: 12,
+    grade: 11,
     materials: "Acrylic on pants",
     description: "Class: Art I",
     year: 2019,
@@ -86,20 +115,20 @@ export const manifest = {
   "IMG_7418.jpg": {
     artist: "Judy Kou",
     grade: 11,
-    materials: "Acrylic, paper maché, cardboard, ribbon",
+    materials: "Acrylic, paper mache, cardboard, ribbon",
     description: "Class: Multimedia II",
     year: 2018,
   },
-  "IMG_7659.jpg": {
+  "IMG_7659.JPG": {
     artist: "Quinn Moreno",
     grade: 10,
     materials: "Aluminum cans, newspaper",
     description: "Class: Multimedia I",
     year: 2019,
   },
-  "IMG_7661.jpg": {
+  "IMG_7661.JPG": {
     artist: "Naima Woods",
-    grade: 12,
+    grade: 11,
     materials: "Acrylic on jacket",
     description: "Class: Art II",
     year: 2019,
@@ -110,5 +139,55 @@ export const manifest = {
     materials: "Acrylic, buttons, glitter",
     description: "Class: Multimedia I",
     year: 2022,
+  },
+  "YaretzyGonzalez2.jpg": {
+    artist: "Yaretzy Gonzalez",
+    grade: 11,
+    materials: "Acrylic",
+    description: "Class: AP-2D Art & Design",
+    year: 2022,
+  },
+  "CosmoGraff4.jpg": {
+    artist: "Cosmo Graff",
+    grade: 11,
+    materials: "acrylic, colored pencil",
+    description: "Class: AP-2D Art & Design",
+    year: 2023,
+  },
+  "CosmoGraff5.jpg": {
+    artist: "Cosmo Graff",
+    grade: 11,
+    materials: "acrylic, marker, string, shrinky-dinks",
+    description: "Class: AP-2D Art & Design",
+    year: 2023,
+  },
+  "ThaliaKouchoukos12.jpg": {
+    artist: "Thalia Kouchoukos",
+    grade: 11,
+    materials: "ink, pencil",
+    description: "Class: AP-2D Art & Design",
+    year: 2023,
+  },
+
+  "ThaliaKouchoukos3.jpg": {
+    artist: "Thalia Kouchoukos",
+    grade: 11,
+    materials: "ink, pen",
+    description: "Class: AP-2D Art & Design",
+    year: 2022,
+  },
+  "Lesly Sanchez1.jpg": {
+    artist: "Lesly Sanchez",
+    grade: 11,
+    materials: "pencil, acrylic, oil pastel",
+    description: "Class: AP-2D Art & Design",
+    year: 2022,
+  },
+  "Lesly Sanchez2.jpg": {
+    artist: "Lesly Sanchez",
+    grade: 11,
+    materials: "pencil",
+    description: "Class: AP-2D Art & Design",
+    year: 2023,
   },
 };
