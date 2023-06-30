@@ -14,7 +14,7 @@ const StudentProcessPage = async () => {
     <>
       {/* <PageTitleBanner>Student Process</PageTitleBanner> */}
       <div className="container">
-        <p className="pt-8 text-justify">
+        <p className="pt-0 text-justify">
           My artmaking process and teaching practice are interconnected and
           inform one another. I work with an eclectic group of students from all
           around the city of Chicago and in one of the most ethnically diverse

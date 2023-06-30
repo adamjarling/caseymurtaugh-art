@@ -59,8 +59,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
         >
           <div className={`flex items-center opacity-100 z-30`}>
             <a href="/" className={`text-lg font-semibold uppercase`}>
-              <span className="hidden lg:block">Casey Murtaugh</span>
-              <span className="lg:hidden">CM</span>
+              <span className="">Casey Murtaugh</span>
             </a>
           </div>
           <div className={`hidden md:flex uppercase opacity-100 z-30`}>

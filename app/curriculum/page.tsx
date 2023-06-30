@@ -33,7 +33,7 @@ export default function CurriculumPage() {
         </p> */}
       </div>
 
-      <div className="container pt-8 mx-auto">
+      <div className="container pt-0 mx-auto">
         {manifest.map((m, i) => (
           <CurriculumItem key={i} item={m} i={i} />
         ))}

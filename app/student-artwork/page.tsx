@@ -22,7 +22,7 @@ const StudentArtworkPage = async () => {
   return (
     <>
       {/* <PageTitleBanner>Student Artwork</PageTitleBanner> */}
-      <div className="container py-8">
+      <div className="container">
         <p>Click on an image for more information about each piece.</p>
       </div>
       {images && (

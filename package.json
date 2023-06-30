@@ -10,6 +10,8 @@
     "image-meta": "node utils/extract-image-metadata.ts"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",

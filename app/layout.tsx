@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Nav from "@/components/Nav";
+import NavTailwind from "@/components/NavTailwind";
 import Script from "next/script";
 
 const montserrat = Montserrat({
@@ -40,17 +41,17 @@ const links = [
     label: "About",
   },
   {
-    href: "/process",
-    label: "Process",
+    href: "/artist",
+    label: "Artist",
   },
   {
-    href: "/student-artwork",
-    label: "Student Artwork",
+    href: "/educator",
+    label: "Educator",
   },
-  {
-    href: "/curriculum",
-    label: "Curriculum",
-  },
+  // {
+  //   href: "/curriculum",
+  //   label: "Curriculum",
+  // },
   {
     href: "/cv",
     label: "CV",
@@ -67,8 +68,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.className}>
       <body>
-        <Nav links={links} />
-        <div className="pt-16 lg:pt-16">
+        {/* <Nav links={links} /> */}
+        <NavTailwind />
+        <div className="pt-4">
           {children}
           <Footer />
         </div>
