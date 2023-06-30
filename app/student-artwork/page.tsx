@@ -1,11 +1,9 @@
 import { Manifest, ManifestStudentArtwork } from "@/types";
-import MasonryGallery, { MasonryImage } from "@/components/Masonry";
 
+import MasonryGallery from "@/components/Masonry";
 import PageTitleBanner from "@/components/PageTitleBanner";
 import images from "./images-meta.json";
 import { manifest } from "./manifest";
-
-const folder = "student-artwork";
 
 const StudentArtworkPage = async () => {
   const newManifest: Manifest = {};
@@ -25,9 +23,7 @@ const StudentArtworkPage = async () => {
       <div className="container">
         <p>Click on an image for more information about each piece.</p>
       </div>
-      {images && (
-        <MasonryGallery dir={folder} images={images} manifest={newManifest} />
-      )}
+      {images && <MasonryGallery images={images} manifest={newManifest} />}
     </>
   );
 };

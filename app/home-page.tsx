@@ -43,13 +43,13 @@ export default function Home() {
           <Block
             bgImgSrc="/artist/IMG_8704.jpg"
             altText="Process"
-            href="/"
+            href="/work"
             label="Work"
           />
           <Block
             bgImgSrc="/educator/IMG_7313.jpg"
             altText="Student artwork"
-            href="/"
+            href="/photos"
             label="Photos"
           />
         </Grid>
