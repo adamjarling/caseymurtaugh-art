@@ -24,15 +24,6 @@ export const metadata: Metadata = {
 export default function CurriculumPage() {
   return (
     <>
-      {/* <PageTitleBanner>Curriculum</PageTitleBanner> */}
-      <div className="container">
-        {/* <p className="py-8">
-          I enjoy creating art curriculum which engages students. Below are some
-          curriculum examples I have used for the Senn Arts program at my high
-          school.
-        </p> */}
-      </div>
-
       <div className="container pt-0 mx-auto">
         {manifest.map((m, i) => (
           <CurriculumItem key={i} item={m} i={i} />

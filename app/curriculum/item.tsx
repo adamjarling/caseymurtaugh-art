@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function CurriculumItem({ item, i }: { item: any; i: number }) {
@@ -17,10 +18,10 @@ export default function CurriculumItem({ item, i }: { item: any; i: number }) {
           height="100%"
           allowFullScreen={true}
         ></iframe>
-        <div className="text-right">
-          <h2 className="mt-3 text-lg font-semibold">{item.title}</h2>
-          <p className="font-light">{item.description}</p>
-        </div>
+      </div>
+      <div className="text-right ">
+        <h2 className="mt-3 text-lg font-semibold">{item.title}</h2>
+        <p className="font-light">{item.description}</p>
       </div>
     </motion.div>
   );

@@ -56,12 +56,11 @@ export const manifest = [
     src: `https://docs.google.com/presentation/d/e/2PACX-1vSxBhEf3YV2yPtdNMPZ7W9unxzQ9nk8qwY4q5tsO8yfJ30R6_o20DO3KXU9Vc4bHHqSQN_YpZxpbdx3/embed?start=false&loop=false&delayms=3000`,
     title: "Mix Tape Slideshow",
     description:
-      "Co-created with Miriam Dolnick, Jesse Wyss, Jenny Gran, Zakkiyah Najeebah, Marcela Torres and supported by The Museum of Contemporary Art's SPACE program. Multiple students participated during a very challenging time both globally and locally here in Chicago.",
+      "Co-created with Miriam Dolnick, Jesse Wyss, Jenny Gran, zakkiyyah najeebah dumas o-neal, Marcela Torres and supported by The Museum of Contemporary Art's SPACE program. Multiple students participated during a very challenging time both globally and locally here in Chicago.",
   },
   {
     src: `https://docs.google.com/presentation/d/e/2PACX-1vSi7Ad_lFk7gQt3PVmUtFULGj_fnph-QOgdkXaiUGT0Rgxb4gV85AYJEs2-JHMOv2rRKZ9fnl87d6qH/embed?start=false&loop=false&delayms=3000`,
     title: "To Generate",
-    description:
-      "Inspired by Richard Serra & an art teacher that i need to find the name of from Jorge's thing",
+    description: "Inspired by Richard Serra & Sue Uhlig (Purdue University)",
   },
 ];

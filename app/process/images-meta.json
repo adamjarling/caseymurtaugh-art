@@ -1,1 +1,238 @@
-[{"filename":"/student-process/1.jpg","height":2938,"width":2938,"type":"jpg"},{"filename":"/student-process/10.JPG","height":1800,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/11.JPG","height":3024,"orientation":3,"width":4032,"type":"jpg"},{"filename":"/student-process/12.JPG","height":1439,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/13.JPG","height":2741,"orientation":1,"width":2741,"type":"jpg"},{"filename":"/student-process/14.jpg","height":3476,"orientation":1,"width":2729,"type":"jpg"},{"filename":"/student-process/15.JPG","height":3780,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/17.JPG","height":3024,"orientation":6,"width":4032,"type":"jpg"},{"filename":"/student-process/18.jpg","height":3702,"orientation":1,"width":2573,"type":"jpg"},{"filename":"/student-process/19.JPG","height":1795,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/2.JPG","height":3024,"orientation":1,"width":4032,"type":"jpg"},{"filename":"/student-process/20.jpg","height":3187,"orientation":1,"width":2751,"type":"jpg"},{"filename":"/student-process/21.jpg","height":3690,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/22.jpg","height":3306,"orientation":1,"width":2669,"type":"jpg"},{"filename":"/student-process/23.jpg","height":3395,"orientation":1,"width":2486,"type":"jpg"},{"filename":"/student-process/24.JPG","height":3059,"orientation":1,"width":2448,"type":"jpg"},{"filename":"/student-process/25.JPG","height":3024,"orientation":6,"width":4032,"type":"jpg"},{"filename":"/student-process/26.jpg","height":4032,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/27.jpg","height":3852,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/28.jpg","height":3134,"orientation":1,"width":2130,"type":"jpg"},{"filename":"/student-process/29.jpg","height":2894,"orientation":1,"width":2290,"type":"jpg"},{"filename":"/student-process/3.JPG","height":1970,"orientation":1,"width":1970,"type":"jpg"},{"filename":"/student-process/30.jpg","height":2586,"orientation":1,"width":1958,"type":"jpg"},{"filename":"/student-process/31.JPG","height":3780,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/4.JPG","height":1800,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/5.JPG","height":1440,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/6.JPG","height":1665,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/7.JPG","height":1800,"orientation":1,"width":1440,"type":"jpg"},{"filename":"/student-process/8.jpg","height":4032,"width":3024,"type":"jpg"},{"filename":"/student-process/9.jpg","height":3301,"orientation":1,"width":2794,"type":"jpg"},{"filename":"/student-process/IMG_0150.jpg","height":3002,"orientation":1,"width":2577,"type":"jpg"},{"filename":"/student-process/IMG_0334.jpg","height":3172,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/IMG_0884.jpg","height":4032,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/IMG_0891.jpg","height":3024,"orientation":1,"width":4032,"type":"jpg"},{"filename":"/student-process/IMG_0975.jpg","height":3587,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-process/IMG_0998.jpg","height":3531,"orientation":1,"width":3024,"type":"jpg"}]
+[
+  {
+    "filename": "/student-process/1.jpg",
+    "height": 2938,
+    "type": "jpg",
+    "width": 2938
+  },
+  {
+    "filename": "/student-process/10.JPG",
+    "height": 1800,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/11.JPG",
+    "height": 3024,
+    "orientation": 3,
+    "type": "jpg",
+    "width": 4032
+  },
+  {
+    "filename": "/student-process/12.JPG",
+    "height": 1439,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/13.JPG",
+    "height": 2741,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2741
+  },
+  {
+    "filename": "/student-process/14.jpg",
+    "height": 3476,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2729
+  },
+  {
+    "filename": "/student-process/15.JPG",
+    "height": 3780,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/17.JPG",
+    "height": 3024,
+    "orientation": 6,
+    "type": "jpg",
+    "width": 4032
+  },
+  {
+    "filename": "/student-process/18.jpg",
+    "height": 3702,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2573
+  },
+  {
+    "filename": "/student-process/19.JPG",
+    "height": 1795,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/2.JPG",
+    "height": 3024,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 4032
+  },
+  {
+    "filename": "/student-process/20.jpg",
+    "height": 3187,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2751
+  },
+  {
+    "filename": "/student-process/21.jpg",
+    "height": 3690,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/22.jpg",
+    "height": 3306,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2669
+  },
+  {
+    "filename": "/student-process/23.jpg",
+    "height": 3395,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2486
+  },
+  {
+    "filename": "/student-process/24.JPG",
+    "height": 3059,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2448
+  },
+  {
+    "filename": "/student-process/25.JPG",
+    "height": 3024,
+    "orientation": 6,
+    "type": "jpg",
+    "width": 4032
+  },
+  {
+    "filename": "/student-process/26.jpg",
+    "height": 4032,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/27.jpg",
+    "height": 3852,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/28.jpg",
+    "height": 3134,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2130
+  },
+  {
+    "filename": "/student-process/29.jpg",
+    "height": 2894,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2290
+  },
+  {
+    "filename": "/student-process/3.JPG",
+    "height": 1970,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1970
+  },
+  {
+    "filename": "/student-process/30.jpg",
+    "height": 2586,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1958
+  },
+  {
+    "filename": "/student-process/31.JPG",
+    "height": 3780,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/4.JPG",
+    "height": 1800,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/5.JPG",
+    "height": 1440,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/6.JPG",
+    "height": 1665,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/7.JPG",
+    "height": 1800,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1440
+  },
+  {
+    "filename": "/student-process/8.jpg",
+    "height": 4032,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/9.jpg",
+    "height": 3301,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2794
+  },
+  {
+    "filename": "/student-process/IMG_0150.jpg",
+    "height": 3002,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2577
+  },
+  {
+    "filename": "/student-process/IMG_0891.jpg",
+    "height": 3024,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 4032
+  },
+  {
+    "filename": "/student-process/IMG_0975.jpg",
+    "height": 3587,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-process/IMG_0998.jpg",
+    "height": 3531,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  }
+]

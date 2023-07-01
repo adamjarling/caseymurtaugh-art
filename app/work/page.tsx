@@ -8,11 +8,10 @@ const WorkPage = async () => {
     <>
       <div className="container">
         <p className="pt-0 text-justify">
-          Selections from my work. Click to see info.
+          Selections from my work. Click for info.
         </p>
+        {images && <MasonryGallery images={images} manifest={manifest} />}
       </div>
-
-      {images && <MasonryGallery images={images} manifest={manifest} />}
     </>
   );
 };

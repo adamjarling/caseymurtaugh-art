@@ -105,13 +105,6 @@ export const manifest = {
     description: "Class: Art I",
     year: 2019,
   },
-  "IMG_7395.JPG": {
-    artist: "Max Evans",
-    grade: 11,
-    materials: "Acrylic on pants",
-    description: "Class: Art I",
-    year: 2019,
-  },
   "IMG_7418.jpg": {
     artist: "Judy Kou",
     grade: 11,

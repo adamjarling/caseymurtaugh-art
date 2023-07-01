@@ -21,9 +21,19 @@ const StudentArtworkPage = async () => {
     <>
       {/* <PageTitleBanner>Student Artwork</PageTitleBanner> */}
       <div className="container">
-        <p>Click on an image for more information about each piece.</p>
+        <p>
+          Student artwork from{" "}
+          <a
+            href="https://www.sennhs.org/"
+            target="_blank"
+            className="border-b border-gray-500 border-dashed hover:border-0"
+          >
+            Senn High School
+          </a>
+          , Chicago USA. Click for more info.
+        </p>
+        {images && <MasonryGallery images={images} manifest={newManifest} />}
       </div>
-      {images && <MasonryGallery images={images} manifest={newManifest} />}
     </>
   );
 };

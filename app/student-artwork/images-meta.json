@@ -1,1 +1,176 @@
-[{"filename":"/student-artwork/CosmoGraff4.jpg","height":4184,"width":2666,"type":"jpg"},{"filename":"/student-artwork/CosmoGraff5.jpg","height":3748,"width":2799,"type":"jpg"},{"filename":"/student-artwork/IMG_0219.jpg","height":2378,"orientation":1,"width":1690,"type":"jpg"},{"filename":"/student-artwork/IMG_0220.jpg","height":1828,"orientation":1,"width":1609,"type":"jpg"},{"filename":"/student-artwork/IMG_0221.jpg","height":2656,"orientation":1,"width":3382,"type":"jpg"},{"filename":"/student-artwork/IMG_0222.jpg","height":3135,"orientation":1,"width":2529,"type":"jpg"},{"filename":"/student-artwork/IMG_0223.jpg","height":3246,"orientation":1,"width":2440,"type":"jpg"},{"filename":"/student-artwork/IMG_0224.jpg","height":3129,"orientation":1,"width":2462,"type":"jpg"},{"filename":"/student-artwork/IMG_0225.jpg","height":3564,"orientation":1,"width":2816,"type":"jpg"},{"filename":"/student-artwork/IMG_0226.jpg","height":3210,"orientation":1,"width":2333,"type":"jpg"},{"filename":"/student-artwork/IMG_0227.jpg","height":2268,"orientation":1,"width":3141,"type":"jpg"},{"filename":"/student-artwork/IMG_0228.jpg","height":2087,"orientation":1,"width":2092,"type":"jpg"},{"filename":"/student-artwork/IMG_0229.jpg","height":1163,"orientation":1,"width":1534,"type":"jpg"},{"filename":"/student-artwork/IMG_5480.jpg","height":2086,"orientation":1,"width":1535,"type":"jpg"},{"filename":"/student-artwork/IMG_6358.JPG","height":1350,"orientation":1,"width":1080,"type":"jpg"},{"filename":"/student-artwork/IMG_6359.JPG","height":1350,"orientation":1,"width":1080,"type":"jpg"},{"filename":"/student-artwork/IMG_6391.jpg","height":4032,"width":3024,"type":"jpg"},{"filename":"/student-artwork/IMG_7395.JPG","height":3024,"orientation":6,"width":4032,"type":"jpg"},{"filename":"/student-artwork/IMG_7418.jpg","height":745,"orientation":1,"width":737,"type":"jpg"},{"filename":"/student-artwork/IMG_7659.JPG","height":3024,"orientation":6,"width":4032,"type":"jpg"},{"filename":"/student-artwork/IMG_7661.JPG","height":3412,"orientation":1,"width":3024,"type":"jpg"},{"filename":"/student-artwork/LeslySanchez1.jpg","height":5073,"width":3819,"type":"jpg"},{"filename":"/student-artwork/LeslySanchez2.jpg","height":5042,"width":5020,"type":"jpg"},{"filename":"/student-artwork/Subject.jpg","height":2229,"orientation":1,"width":1767,"type":"jpg"},{"filename":"/student-artwork/ThaliaKouchoukos12.jpg","height":2751,"width":3310,"type":"jpg"},{"filename":"/student-artwork/ThaliaKouchoukos3.jpg","height":789,"width":3729,"type":"jpg"},{"filename":"/student-artwork/YaretzyGonzalez2.jpg","height":2582,"width":3315,"type":"jpg"}]
+[
+  {
+    "filename": "/student-artwork/CosmoGraff4.jpg",
+    "height": 4184,
+    "type": "jpg",
+    "width": 2666
+  },
+  {
+    "filename": "/student-artwork/CosmoGraff5.jpg",
+    "height": 3748,
+    "type": "jpg",
+    "width": 2799
+  },
+  {
+    "filename": "/student-artwork/IMG_0219.jpg",
+    "height": 2378,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1690
+  },
+  {
+    "filename": "/student-artwork/IMG_0220.jpg",
+    "height": 1828,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1609
+  },
+  {
+    "filename": "/student-artwork/IMG_0221.jpg",
+    "height": 2656,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3382
+  },
+  {
+    "filename": "/student-artwork/IMG_0222.jpg",
+    "height": 3135,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2529
+  },
+  {
+    "filename": "/student-artwork/IMG_0223.jpg",
+    "height": 3246,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2440
+  },
+  {
+    "filename": "/student-artwork/IMG_0224.jpg",
+    "height": 3129,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2462
+  },
+  {
+    "filename": "/student-artwork/IMG_0225.jpg",
+    "height": 3564,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2816
+  },
+  {
+    "filename": "/student-artwork/IMG_0226.jpg",
+    "height": 3210,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2333
+  },
+  {
+    "filename": "/student-artwork/IMG_0227.jpg",
+    "height": 2268,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3141
+  },
+  {
+    "filename": "/student-artwork/IMG_0228.jpg",
+    "height": 2087,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 2092
+  },
+  {
+    "filename": "/student-artwork/IMG_0229.jpg",
+    "height": 1163,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1534
+  },
+  {
+    "filename": "/student-artwork/IMG_5480.jpg",
+    "height": 2086,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1535
+  },
+  {
+    "filename": "/student-artwork/IMG_6358.JPG",
+    "height": 1350,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1080
+  },
+  {
+    "filename": "/student-artwork/IMG_6359.JPG",
+    "height": 1350,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1080
+  },
+  {
+    "filename": "/student-artwork/IMG_6391.jpg",
+    "height": 4032,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-artwork/IMG_7418.jpg",
+    "height": 745,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 737
+  },
+  {
+    "filename": "/student-artwork/IMG_7659.JPG",
+    "height": 3024,
+    "orientation": 6,
+    "type": "jpg",
+    "width": 4032
+  },
+  {
+    "filename": "/student-artwork/IMG_7661.JPG",
+    "height": 3412,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 3024
+  },
+  {
+    "filename": "/student-artwork/LeslySanchez1.jpg",
+    "height": 5073,
+    "type": "jpg",
+    "width": 3819
+  },
+  {
+    "filename": "/student-artwork/LeslySanchez2.jpg",
+    "height": 5042,
+    "type": "jpg",
+    "width": 5020
+  },
+  {
+    "filename": "/student-artwork/Subject.jpg",
+    "height": 2229,
+    "orientation": 1,
+    "type": "jpg",
+    "width": 1767
+  },
+  {
+    "filename": "/student-artwork/ThaliaKouchoukos12.jpg",
+    "height": 2751,
+    "type": "jpg",
+    "width": 3310
+  },
+  {
+    "filename": "/student-artwork/ThaliaKouchoukos3.jpg",
+    "height": 789,
+    "type": "jpg",
+    "width": 3729
+  },
+  {
+    "filename": "/student-artwork/YaretzyGonzalez2.jpg",
+    "height": 2582,
+    "type": "jpg",
+    "width": 3315
+  }
+]

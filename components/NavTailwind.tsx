@@ -33,7 +33,7 @@ const educatorItems = [
   },
   {
     name: "Curriculum",
-    description: "Latest curriculum news and reviews",
+    description: "Presentations and curriculum",
     href: "/curriculum",
   },
 ];

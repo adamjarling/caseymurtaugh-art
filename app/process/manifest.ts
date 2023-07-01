@@ -89,12 +89,6 @@ export const manifest = {
   "IMG_0150.jpg": {
     description: "Layers",
   },
-  "IMG_0334.jpg": {
-    description: "Eye",
-  },
-  "IMG_0884.jpg": {
-    description: "Forming",
-  },
   "IMG_0891.jpg": {
     description: "Standing & sitting",
   },
