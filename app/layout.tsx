@@ -13,6 +13,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://caseymurtaugh.art"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
   title: {
     default: "Casey Murtaugh",
     template: "%s | Casey Murtaugh",
@@ -35,29 +42,6 @@ export const metadata: Metadata = {
   },
 };
 
-const links = [
-  {
-    href: "/about",
-    label: "About",
-  },
-  {
-    href: "/artist",
-    label: "Artist",
-  },
-  {
-    href: "/educator",
-    label: "Educator",
-  },
-  // {
-  //   href: "/curriculum",
-  //   label: "Curriculum",
-  // },
-  {
-    href: "/cv",
-    label: "CV",
-  },
-];
-
 export default function RootLayout({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
@@ -68,7 +52,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.className}>
       <body>
-        {/* <Nav links={links} /> */}
         <NavTailwind />
         <div className="pt-4">
           {children}
