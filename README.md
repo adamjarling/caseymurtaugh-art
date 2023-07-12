@@ -1,6 +1,6 @@
 # Caseymurtaugh.art
 
-This is a NextJS app.
+This is a NextJS app for https://caseymurtaugh.art
 
 ## Masonry Galleries
 
@@ -13,3 +13,7 @@ npm run image-meta [PAGE_COMPONENT_DIRECTORY] [SOURCE_DIRECTORY]
 ```
 
 This will generate a JSON file `images-meta.json` which will live in the `[PAGE_COMPONENT_DIRECTORY]` folder and which the component will use to grab images. This is a bit of a workaround, as running this script at build time (processing a lot of images) overloads the AWS lambda limit > 50MB, and the Vercel build fails.
+
+## CV
+
+Note for the PDF CV to render, `react-pdf` must be pinned to version `v6.2.2`.
