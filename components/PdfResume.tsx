@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { Document, Page } from "react-pdf";
 
+import dynamic from "next/dynamic";
+import { useState } from "react";
 import { useWindowSize } from "@/hooks/use-window-size";
 
 export default function PDFViewer() {
   const size = useWindowSize();
-  const [file, setFile] = useState("/images/CaseyMurtaugh_Resume2023.pdf");
   const [numPages, setNumPages] = useState<number | null>(null);
 
   function onDocumentLoadSuccess({
@@ -31,16 +31,13 @@ export default function PDFViewer() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <div className="pt-6 lg:pt-12">
-        <button
-          className="px-2 py-1 text-xs border-black"
-          style={{ borderWidth: "1px" }}
-        >
-          Download resume
-        </button>
+      <div className="py-6 lg:pt-12">
+        <a href="/images/casey-murtaugh-2023.pdf" download>
+          Download
+        </a>
       </div>
       <Document
-        file={"/images/CaseyMurtaugh_Resume2023.pdf"}
+        file={"/images/casey-murtaugh-2023.pdf"}
         onLoadSuccess={onDocumentLoadSuccess}
         // @ts-ignore
         pageLayout="twoColumnLeft"
