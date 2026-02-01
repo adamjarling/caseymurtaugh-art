@@ -17,17 +17,18 @@ const AboutPage = async () => {
           My artmaking and teaching are inseparable, collaborative processes.
           Whether in a Chicago public school or an international academy in
           Vienna, I prioritize student input, personal stories, and
-          inquiry-based questions as the "seeds" for both curriculum and my own
-          visual research. I am fascinated by the messy process of making art
-          and how it allows students to develop unique ideas and real-world
-          connections. 
+          inquiry-based questions as the &ldquo;seeds&rdquo; for both curriculum
+          and my own visual research. I am fascinated by the messy process of
+          making art and how it allows students to develop unique ideas and
+          real-world connections.
         </p>
         <p className="pt-0 text-justify">
-          My current research involves collecting the sensory "bits and pieces"
-          of institutional life - the rhythmic pulse of school hallways, the
-          movement of people through historic spaces, and the visual glitches
-          found in the cracks of daily routines. This practice of active
-          collection informs my photography, mixed media, and installation work.
+          My current research involves collecting the sensory &ldquo;bits and
+          pieces&rdquo; of institutional life - the rhythmic pulse of school
+          hallways, the movement of people through historic spaces, and the
+          visual glitches found in the cracks of daily routines. This practice
+          of active collection informs my photography, mixed media, and
+          installation work.
         </p>
         <p className="pt-0 text-justify">
           With a <strong>Master of Arts in Interdisciplinary Arts</strong> from
